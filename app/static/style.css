@@ -5,17 +5,17 @@ li {
   vertical-align: top;
 }
 
-.supply {
+.grid {
   margin: 0 auto;
   text-align: center;
 }
 
-.kingdom_card_img {
+.profile_card_img {
   max-width: 100%;
   height: auto;
 }
 
-.kingdom_card {
+.profile_card {
   width: 120px;
   min-height: 120px;
   max-height: auto;

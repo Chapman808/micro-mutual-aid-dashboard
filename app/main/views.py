@@ -1,15 +1,18 @@
 from . import main
-from .forms import GenerateKingdomForm
+from .forms import ProfileForm
 from flask import make_response, render_template
-from dominion.kingdom import Kingdom
+import dao
 
 @main.route('/', methods=['GET', 'POST'])
 def index(requireActions : bool = None):
-  kingdom = Kingdom()
-  form = GenerateKingdomForm()
+  cards = dao.get_profiles()
+  return render_template('index.html', cards = cards)
+
+@main.route('/form', methods=['GET', 'POST'])
+def index(requireActions : bool = None):
+  form = ProfileForm()
   if form.validate_on_submit():
-    kingdom = Kingdom(
-      included_expansions=form.expansions.data #add to form later
-    ) 
-    kingdom.generate_kingdom()
-  return render_template('index.html', kingdom=kingdom, form=form)
+    profile_data = form.expansions.data #add to form later
+    print(profile_data)
+  return render_template('edit_profile.html', form=form)
+

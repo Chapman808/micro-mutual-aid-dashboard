@@ -8,10 +8,7 @@
    </head>
   <body>
     <h1>Micro-Mutual Aid Dashboard!</h1>
-    <div>
-      {% if cards %}
-        {{ grid.render_grid(cards) }}
-      {% endif %}
-    </div>
+    <h2>Submit profile info:</h2>
+    {{ wtf.quick_form(form) }}
   </body>
 </html>

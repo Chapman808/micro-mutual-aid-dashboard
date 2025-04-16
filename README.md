@@ -1,12 +1,8 @@
-# Dominion Randomizer
-
+# Micro-Mutual Aid Dashbord (MMAD!) ( ｡ •̀ ᴖ •́ ｡)
 ![image](https://github.com/user-attachments/assets/112b7b68-2c96-489b-905c-92c88fe48365)
 
 ## Overview
-This is a web application that generates randomized Kingdoms for the deck-building board game Dominion.
-This project is built with Flask. 
-
-This project also includes an ingest tool for processing Dominion-related data from the DominionStrategyWiki. See the section on the Ingest Tool below for more details
+This is a web application that stores & presents community member's needs & offering to help Mutual Aid micro-clusters build toward collective survival.
 
 ## Setup
 
@@ -15,7 +11,7 @@ export a SECRET_KEY env variable: ```export SECRET_KEY="{insert key}"```
 
 ## Usage
 
-### Starting the DominionRandomizer Server 
+### Starting the Web server 
 
 run the manager script from the root diectory: ```python3 manage.py```
 
@@ -23,14 +19,9 @@ run unit tests: ```python3 -m unittest```
 
 ### Running tests
 
-run all unit tests: ```python3 -m unittest tests.test_dominion_data```
-run a specific unit test: ``` python3 -m unittest tests.test_dominion.UtilTests.test_get_expansion_data```
+run all unit tests: ```python3 -m unittest tests```
+run a specific unit test: ``` python3 -m unittest tests.<file>.<class>.<method>```
 
-## Ingest Tool
-
-The Dominion Randomizer relies on stored datasets generated from custom backend ingest infrastructure. The ingest tool is the entrypoint for initiating ingest operations on the server.
-
-TODO: elaborate on the tool's purpose as well as basic usage
 
 ## Techical Details: Application Layout
 
@@ -67,8 +58,3 @@ Ritchie Danna (rddanna@gmail.com)
 ## References & Credits
  
 [1] The patterns present here are strongly inspired by the textbook Flask Web Development, by Miguel Grinberg. This text is freely available here: [implement link]
-
-This project also utilizes the Dominion Wiki, with big thanks to all the folks who manage it :-)
-
-This is not the first Dominion randomizer. Although no source material is references, credit goes to the contributers of these various applicaitons for inspiration, and for countless moments of simplified Dominion setup <3
-

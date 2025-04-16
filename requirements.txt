@@ -1,6 +1,4 @@
 flask
 flask-wtf
 flask-bootstrap
-pandas
 lxml
-bs4

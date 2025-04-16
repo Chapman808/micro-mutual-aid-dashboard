@@ -1,9 +1,0 @@
-{% macro render_supply(kingdom) %}
-<ul class="supply">
-  {% for card in kingdom.cards %}
-  <li>
-    {% include 'card.html' %}
-  </li>
-  {% endfor %}
-</ul>
-{% endmacro %}
