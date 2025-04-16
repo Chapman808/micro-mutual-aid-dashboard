@@ -1,5 +1,4 @@
 # Micro-Mutual Aid Dashbord (MMAD!) ( ｡ •̀ ᴖ •́ ｡)
-![image](https://github.com/user-attachments/assets/112b7b68-2c96-489b-905c-92c88fe48365)
 
 ## Overview
 This is a web application that stores & presents community member's needs & offering to help Mutual Aid micro-clusters build toward collective survival.
