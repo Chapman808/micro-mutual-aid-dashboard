@@ -4,6 +4,8 @@
 ## Overview
 This is a web application that stores & presents community member's needs & offering to help Mutual Aid micro-clusters build toward collective survival.
 
+![alt text](image.png)
+
 ## Setup
 
 ```pip3 install -r requirements.txt ```

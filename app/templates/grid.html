@@ -1,9 +1,0 @@
-{% macro render_grid(cards) %}
-<ul class="grid">
-  {% for name, card in cards.items() %}
-  <li>
-    {% include 'card.html' %}
-  </li>
-  {% endfor %}
-</ul>
-{% endmacro %}

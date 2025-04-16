@@ -1,7 +1,7 @@
 from . import main
 from .forms import ProfileForm
 from flask import make_response, render_template
-import dao
+import dao.dao as dao
 
 @main.route('/', methods=['GET', 'POST'])
 def index(requireActions : bool = None):
@@ -9,7 +9,7 @@ def index(requireActions : bool = None):
   return render_template('index.html', cards = cards)
 
 @main.route('/form', methods=['GET', 'POST'])
-def index(requireActions : bool = None):
+def form(requireActions : bool = None):
   form = ProfileForm()
   if form.validate_on_submit():
     profile_data = form.expansions.data #add to form later

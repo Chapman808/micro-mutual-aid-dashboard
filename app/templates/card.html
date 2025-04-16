@@ -1,4 +1,9 @@
 <div class="profile_card">
-    <h3>{ name }</h3>
-    <p>{ profile_data }</p>
+    <h3>{{ name }}</h3>
+
+    <h4>Provides</h4>
+    <p>{{ profile_data['provides'] }}</p>
+
+    <h4>Needs</h4>
+    <p>{{ profile_data['needs'] }}</p>
 </div>

@@ -1,25 +1,49 @@
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: light;
+    --bg: #fff;
+    --accent-bg: #f5f7ff;
+    --text: #212121;
+    --text-light: #585858;
+    --accent: #0d47a1;
+    --accent-hover: #1266e2;
+    --accent-text: var(--bg);
+    --code: #d81b60;
+    --preformatted: #444;
+    --marked: #ffdd33;
+    --disabled: #efefef;
+  }
+}
+
+body {
+  grid-template-columns: 1fr 4fr 1fr;
+}
 
 li {
   display: inline-block;
   vertical-align: top;
 }
 
-.grid {
+.content_area {
   margin: 0 auto;
   text-align: center;
+  width: 100%;
 }
 
-.profile_card_img {
-  max-width: 100%;
-  height: auto;
+.profile_grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 0;
 }
 
 .profile_card {
-  width: 120px;
   min-height: 120px;
   max-height: auto;
+  width: 95%;
   float: left;
   margin: 3px;
   padding: 3px;
+  border-radius: 10%;
+  background-color: rgb(193, 255, 251);
 }

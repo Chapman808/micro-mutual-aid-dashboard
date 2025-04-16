@@ -1,5 +1,5 @@
 {% import "bootstrap/wtf.html" as wtf %}
-{% import 'supply.html' as supply %}
+{% import 'profile_grid.html' as profile_grid %}
 <html>
   <head>
     <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
@@ -8,9 +8,9 @@
    </head>
   <body>
     <h1>Micro-Mutual Aid Dashboard!</h1>
-    <div>
+    <div class="content_area">
       {% if cards %}
-        {{ grid.render_grid(cards) }}
+        {{ profile_grid.render_profile_grid(cards) }}
       {% endif %}
     </div>
   </body>

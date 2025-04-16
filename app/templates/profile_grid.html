@@ -1,0 +1,9 @@
+{% macro render_profile_grid(cards) %}
+<ul class="profile_grid">
+  {% for name, profile_data in cards.items() %}
+  <li class="profile_grid_li">
+    {% include 'card.html' %}
+  </li>
+  {% endfor %}
+</ul>
+{% endmacro %}
